@@ -1,0 +1,82 @@
+#for my pseudo-code assignments in Full Stack Developer Certification,
+#I have decided to use python.
+
+#
+### **** p.22 Automate The Boring Stuff With Python ****
+#This program says hello, asks for my name and age, and tells me how old I will be in a year
+#
+print('Hello World!')
+print('What is your name?') #ask for their name
+MyName = input()
+print('It is great to meet you, ' + MyName)
+print('The length of your First name is: ')
+print(len(MyName))
+print('What is your age?') #ask for their age
+MyAge = input()
+print('You will be ' + str(int(MyAge) + 1) + ' in a year.')
+      
+#
+### **** FSD Week 4: Introduction to Programming  ****
+#Practice Questions DIY
+#1
+#print(MyName + ', what is your age?')
+MyAge = int(MyAge)
+if MyAge >= 18:
+    print('You are eligible to vote. Congratulations!')
+else:
+    print('I am sorry, but as of today, you are too young to vote.')
+
+#
+### **** FSD Week 4: Introduction to Programming  ****
+#Practice Questions DIY
+#2
+if MyAge > 12 and MyAge < 20:
+    print('Because you are ' + str(MyAge) + ', you are a teenager.')
+elif MyAge <= 12:
+    print('Because you are ' + str(MyAge) + ', you are a child.')
+else:
+    print('Because you are ' + str(MyAge) + ', you are an adult.')
+
+#
+### **** FSD Week 4: Introduction to Programming  ****
+#Practice Questions DIY
+#3
+print('Please tell me your exam score, and I will convert it to a letter grade for you.')
+score = input()
+score = int(score)
+if score >= 90:
+    print('Congratulations, you have earned an A!')
+elif score >= 80 and score <90:
+    print('Great effort! You have earned a B.')
+elif score >= 70 and score <80:
+    print('You have earned a C. Please consider building more time for study into your schedule.')
+elif score >= 60 and score <70:
+    print('Your current grade is a D. Please contact your teacher for tutorials.')
+else:
+    print('You have a failing grade. An F is unacceptable. Please visit with your counselor to discuss writing an action plan, and setting up a schedule of regular check in meetings to keep you on track.') 
+
+#
+### **** FSD Week 4: Introduction to Programming  ****
+#Practice Questions DIY
+#4
+vowel = ['A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u']
+print('Please enter a letter. I will identify it as a vowel or consonant for you.')
+character = input()
+if character in vowel:
+    print('The letter you have chosen is a vowel.')
+elif character is "Y" or character is "y":
+    print('The letter y is tricky. It is a vowel if it makes the same sound as an i.')
+    print('For example, in the word "by" the y is a vowel.')
+    print('However, in the word "young" the y makes a yuh sound, so it is a consonant.')
+else:
+    print('The letter you have chosen is a consonant')
+
+#
+### **** FSD Week 4: Introduction to Programming  ****
+#Practice Questions DIY
+#5
+print('Enter the temperature in degrees Fahrenheit.')
+temp_F = input()
+temp_F = int(temp_F)
+temp_C = (temp_F - 32) * (5/9)
+print(str(temp_F) + ' is ' + str(temp_C) + ' degrees Celsius.')
